@@ -19,33 +19,33 @@
         "cells": [
           {
             "position": {
-              "x": 180,
-              "y": 434.9999999999993
+              "x": 170,
+              "y": 440
             },
             "size": {
-              "width": 410,
-              "height": 340
+              "width": 390,
+              "height": 370
             },
             "shape": "trust-boundary-box",
             "attrs": {
               "headerText": {
-                "text": "\nTrust Boundary\nTom Tom Go Comfort"
+                "text": "\n(Trust Boundary)\nTom Tom Go Comfort"
               }
             },
             "zIndex": -1,
             "id": "5fef9fbb-9db6-4be0-9286-238ec6e60029",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "\nTrust Boundary\nTom Tom Go Comfort",
-              "description": "",
+              "name": "\n(Trust Boundary)\nTom Tom Go Comfort",
+              "description": "Local area",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             }
           },
           {
             "position": {
-              "x": 752.5,
-              "y": 670
+              "x": 717.5,
+              "y": 624.9999999999993
             },
             "size": {
               "width": 112.5,
@@ -78,8 +78,8 @@
           },
           {
             "position": {
-              "x": 250,
-              "y": 575
+              "x": 200,
+              "y": 610
             },
             "size": {
               "width": 120,
@@ -87,11 +87,13 @@
             },
             "attrs": {
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -109,8 +111,35 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "cf3b9a67-f2c0-4fea-a2d8-895308fa7cef",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "7f8ac85a-caad-4ee1-a8db-a1ed88e70c81",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -122,7 +151,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -133,10 +162,10 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Local access",
               "description": "",
               "outOfScope": false,
-              "isBidirectional": false,
+              "isBidirectional": true,
               "reasonOutOfScope": "",
               "protocol": "",
               "isEncrypted": false,
@@ -144,19 +173,226 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "1e456396-34e3-4d4e-8ca8-260040ad15c4",
+            "id": "8882183d-8d2f-4ed2-ab1f-4981fde0a4d4",
+            "source": {
+              "cell": "2a266c6e-d955-4c48-ae09-412d5f190764"
+            },
+            "target": {
+              "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
+            },
+            "vertices": [],
+            "labels": [
+              "Local access"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "<<TBC>> Wifi or Bluetooth",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": true,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "9ed70e96-99e7-48cb-b3f7-f62d0ff8e267",
             "source": {
               "cell": "b951f7b7-3752-40f8-9f3f-3521891bff53"
             },
             "target": {
-              "x": 850,
-              "y": 190
+              "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
             },
             "vertices": [
               {
-                "x": 690,
-                "y": 360
+                "x": 600,
+                "y": 554
               }
+            ],
+            "labels": [
+              "<<TBC>> Wifi or Bluetooth"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Wifi ",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": true,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "2169d620-cb58-4736-a6da-2a68257a5fe8",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "7822c6b9-82a3-447d-8e75-4a9d669834f1",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "e9d9b4ac-dc8b-4176-aa46-cbd39df873a0",
+            "source": {
+              "cell": "2932c173-28b8-47eb-8519-d6815c6075d6"
+            },
+            "target": {
+              "cell": "b951f7b7-3752-40f8-9f3f-3521891bff53"
+            },
+            "labels": [
+              "Wifi "
+            ],
+            "vertices": [
+              {
+                "x": 560,
+                "y": 470
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "LTE or WLAN",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": true,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "3dac3853-a988-49e2-b311-d8c4eba3012a",
+            "source": {
+              "x": 840,
+              "y": 460
+            },
+            "target": {
+              "cell": "2bc11964-fd3d-4f02-8a4c-7a0553daebaf"
+            },
+            "labels": [
+              "LTE or WLAN"
+            ],
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": true,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "a6428a3f-0331-48a3-965d-6f49190325a1",
+            "source": {
+              "cell": "cba3869f-6632-4af1-bd91-2018d55bf983"
+            },
+            "target": {
+              "cell": "2a266c6e-d955-4c48-ae09-412d5f190764"
+            },
+            "labels": [
+              ""
             ]
           },
           {
@@ -174,21 +410,25 @@
             },
             "id": "71f0a507-7993-4693-9bb0-5f1aee984b1b",
             "source": {
-              "x": 140,
-              "y": 170
+              "x": 160,
+              "y": 270
             },
             "target": {
-              "x": 1020,
-              "y": 800
+              "x": 1040,
+              "y": 860
             },
             "vertices": [
               {
-                "x": 540,
-                "y": 230
+                "x": 560,
+                "y": 280
               },
               {
-                "x": 810,
-                "y": 430
+                "x": 860,
+                "y": 400
+              },
+              {
+                "x": 960,
+                "y": 590
               }
             ]
           },
@@ -201,7 +441,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -215,7 +455,7 @@
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
-              "isBidirectional": false,
+              "isBidirectional": true,
               "reasonOutOfScope": "",
               "protocol": "",
               "isEncrypted": false,
@@ -223,52 +463,18 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "8882183d-8d2f-4ed2-ab1f-4981fde0a4d4",
+            "id": "df195e2a-3bbb-4836-9769-ce32bd5643cd",
             "source": {
-              "cell": "2a266c6e-d955-4c48-ae09-412d5f190764"
+              "cell": "cba3869f-6632-4af1-bd91-2018d55bf983"
             },
             "target": {
-              "x": 750,
-              "y": 700
+              "cell": "b951f7b7-3752-40f8-9f3f-3521891bff53"
             },
-            "vertices": [
-              {
-                "x": 610,
-                "y": 670
-              },
-              {
-                "x": 670,
-                "y": 670
-              }
-            ]
+            "vertices": []
           },
           {
             "position": {
-              "x": 650,
-              "y": 575
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Wifi or Blutooth"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "zIndex": 11,
-            "id": "ee1edb42-0b19-4920-819b-4cfefe848136",
-            "data": {
-              "type": "tm.Text",
-              "name": "Wifi or Blutooth",
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 470,
+              "x": 410,
               "y": 455
             },
             "size": {
@@ -277,11 +483,11 @@
             },
             "attrs": {
               "text": {
-                "text": "Mydrive\nTom Tom service"
+                "text": "Tom Tom \nservice"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -291,19 +497,33 @@
             "id": "b951f7b7-3752-40f8-9f3f-3521891bff53",
             "data": {
               "type": "tm.Process",
-              "name": "Mydrive\nTom Tom service",
+              "name": "Tom Tom \nservice",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "b9f1fad7-bf01-4765-8a15-6463cd4ac3ad",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ]
             }
           },
           {
             "position": {
-              "x": 802.5,
-              "y": 91.00000000000006
+              "x": 1060,
+              "y": 280
             },
             "size": {
               "width": 90,
@@ -335,9 +555,10 @@
             }
           },
           {
+            "angle": 75,
             "position": {
-              "x": 410,
-              "y": 230
+              "x": 880,
+              "y": 680.0386374562004
             },
             "size": {
               "width": 160,
@@ -345,7 +566,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Local Access Boundary"
+                "text": "(Trst Boundary)\n\nLocal Access Boundary"
               }
             },
             "visible": true,
@@ -354,14 +575,14 @@
             "id": "f07c4053-d4d2-4d35-ab41-f39648922cba",
             "data": {
               "type": "tm.Text",
-              "name": "Local Access Boundary",
+              "name": "(Trst Boundary)\n\nLocal Access Boundary",
               "hasOpenThreats": false
             }
           },
           {
             "position": {
-              "x": 470,
-              "y": 594.9999999999993
+              "x": 410,
+              "y": 624.9999999999993
             },
             "size": {
               "width": 100,
@@ -389,6 +610,54 @@
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "b822fab4-2eeb-48dd-bd6c-3e666724a746",
+                  "title": "New STRIDE threat",
+                  "status": "NotApplicable",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 717.5,
+              "y": 430
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Router\nMobile Hotspot"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "2932c173-28b8-47eb-8519-d6815c6075d6",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Router\nMobile Hotspot",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
               "threats": []
             }
           }
@@ -398,6 +667,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 10
   }
 }
