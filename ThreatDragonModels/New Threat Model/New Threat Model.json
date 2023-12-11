@@ -63,8 +63,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "3822374a-00c4-4e2b-9020-46b9b2fffb49",
             "zIndex": 1,
+            "id": "3822374a-00c4-4e2b-9020-46b9b2fffb49",
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -97,8 +97,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "cba3869f-6632-4af1-bd91-2018d55bf983",
             "zIndex": 2,
+            "id": "cba3869f-6632-4af1-bd91-2018d55bf983",
             "data": {
               "type": "tm.Store",
               "name": "Store",
@@ -258,8 +258,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "ee1edb42-0b19-4920-819b-4cfefe848136",
             "zIndex": 11,
+            "id": "ee1edb42-0b19-4920-819b-4cfefe848136",
             "data": {
               "type": "tm.Text",
               "name": "Wifi or Blutooth",
@@ -287,8 +287,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "b951f7b7-3752-40f8-9f3f-3521891bff53",
             "zIndex": 12,
+            "id": "b951f7b7-3752-40f8-9f3f-3521891bff53",
             "data": {
               "type": "tm.Process",
               "name": "Mydrive\nTom Tom service",
@@ -321,8 +321,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "2bc11964-fd3d-4f02-8a4c-7a0553daebaf",
             "zIndex": 13,
+            "id": "2bc11964-fd3d-4f02-8a4c-7a0553daebaf",
             "data": {
               "type": "tm.Process",
               "name": "Tom Tom \nservice",
@@ -350,8 +350,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "f07c4053-d4d2-4d35-ab41-f39648922cba",
             "zIndex": 14,
+            "id": "f07c4053-d4d2-4d35-ab41-f39648922cba",
             "data": {
               "type": "tm.Text",
               "name": "Local Access Boundary",
@@ -379,6 +379,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "id": "2a266c6e-d955-4c48-ae09-412d5f190764",
             "data": {
               "type": "tm.Process",
@@ -389,8 +390,7 @@
               "privilegeLevel": "",
               "hasOpenThreats": false,
               "threats": []
-            },
-            "zIndex": 15
+            }
           }
         ],
         "format": "td"
