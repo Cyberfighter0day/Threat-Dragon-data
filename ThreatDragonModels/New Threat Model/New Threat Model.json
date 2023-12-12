@@ -304,43 +304,6 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "71f0a507-7993-4693-9bb0-5f1aee984b1b",
-            "source": {
-              "x": 160,
-              "y": 270
-            },
-            "target": {
-              "x": 1040,
-              "y": 860
-            },
-            "vertices": [
-              {
-                "x": 560,
-                "y": 280
-              },
-              {
-                "x": 860,
-                "y": 400
-              },
-              {
-                "x": 960,
-                "y": 590
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -468,6 +431,46 @@
             "vertices": []
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "(Trust Boundary)\n\nLocal Access Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "71f0a507-7993-4693-9bb0-5f1aee984b1b",
+            "source": {
+              "x": 160,
+              "y": 270
+            },
+            "target": {
+              "x": 1040,
+              "y": 860
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 280
+              },
+              {
+                "x": 860,
+                "y": 400
+              },
+              {
+                "x": 960,
+                "y": 590
+              }
+            ],
+            "labels": [
+              "(Trust Boundary)\n\nLocal Access Boundary"
+            ]
+          },
+          {
             "position": {
               "x": 410,
               "y": 455
@@ -553,7 +556,7 @@
             "angle": 75,
             "position": {
               "x": 880,
-              "y": 680.0386374562004
+              "y": 725.0386374562011
             },
             "size": {
               "width": 160,
@@ -655,6 +658,30 @@
               "hasOpenThreats": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 210,
+              "y": 280
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "(Trst Boundary)\n\nLocal Access Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "e0c513e9-b487-4ba5-b965-183755f8ddca",
+            "data": {
+              "type": "tm.Text",
+              "name": "(Trst Boundary)\n\nLocal Access Boundary",
+              "hasOpenThreats": false
+            },
+            "zIndex": 17
           }
         ],
         "format": "td"
