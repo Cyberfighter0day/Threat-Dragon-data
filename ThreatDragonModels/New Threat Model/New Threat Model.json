@@ -29,14 +29,14 @@
             "shape": "trust-boundary-box",
             "attrs": {
               "headerText": {
-                "text": "\n(Trust Boundary)\nTom Tom Go Comfort"
+                "text": "\n\n(Trust Boundary)\n\nTom Tom Go Comfort"
               }
             },
             "zIndex": -1,
             "id": "5fef9fbb-9db6-4be0-9286-238ec6e60029",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "\n(Trust Boundary)\nTom Tom Go Comfort",
+              "name": "\n\n(Trust Boundary)\n\nTom Tom Go Comfort",
               "description": "Local area",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -146,49 +146,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Touch Screen",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": true,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "8882183d-8d2f-4ed2-ab1f-4981fde0a4d4",
-            "labels": [
-              "Touch Screen"
-            ],
-            "source": {
-              "cell": "2a266c6e-d955-4c48-ae09-412d5f190764"
-            },
-            "target": {
-              "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -256,8 +213,8 @@
             },
             "vertices": [
               {
-                "x": 560,
-                "y": 470
+                "x": 570,
+                "y": 480
               }
             ]
           },
@@ -452,12 +409,7 @@
             "target": {
               "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
             },
-            "vertices": [
-              {
-                "x": 610,
-                "y": 610
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -479,9 +431,51 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "LTE",
+              "name": "Touch Screen",
               "description": "",
               "outOfScope": false,
+              "isBidirectional": true,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "fa151fe5-535d-4f19-93e9-2378d44383b5",
+            "source": {
+              "cell": "2a266c6e-d955-4c48-ae09-412d5f190764"
+            },
+            "target": {
+              "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
+            },
+            "labels": [
+              "Touch Screen"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "LTE",
+              "description": "",
+              "outOfScope": true,
               "isBidirectional": true,
               "reasonOutOfScope": "",
               "protocol": "",
@@ -505,7 +499,7 @@
           {
             "position": {
               "x": 410,
-              "y": 455
+              "y": 475
             },
             "size": {
               "width": 100,
@@ -552,8 +546,8 @@
           },
           {
             "position": {
-              "x": 1060,
-              "y": 280
+              "x": 1080,
+              "y": 410
             },
             "size": {
               "width": 90,
@@ -566,7 +560,7 @@
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "visible": true,
@@ -577,7 +571,7 @@
               "type": "tm.Process",
               "name": "Tom Tom \nservice",
               "description": "",
-              "outOfScope": false,
+              "outOfScope": true,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
@@ -673,7 +667,7 @@
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "visible": true,
@@ -684,7 +678,7 @@
               "type": "tm.Actor",
               "name": "Router, \nMobile Hotspot, \nothers",
               "description": "",
-              "outOfScope": false,
+              "outOfScope": true,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
               "hasOpenThreats": false,
