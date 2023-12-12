@@ -174,16 +174,16 @@
               "threats": []
             },
             "id": "8882183d-8d2f-4ed2-ab1f-4981fde0a4d4",
+            "labels": [
+              "Local access"
+            ],
             "source": {
               "cell": "2a266c6e-d955-4c48-ae09-412d5f190764"
             },
             "target": {
               "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
             },
-            "vertices": [],
-            "labels": [
-              "Local access"
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -217,6 +217,9 @@
               "threats": []
             },
             "id": "9ed70e96-99e7-48cb-b3f7-f62d0ff8e267",
+            "labels": [
+              "<<TBC>> Wifi or Bluetooth"
+            ],
             "source": {
               "cell": "b951f7b7-3752-40f8-9f3f-3521891bff53"
             },
@@ -228,9 +231,6 @@
                 "x": 600,
                 "y": 554
               }
-            ],
-            "labels": [
-              "<<TBC>> Wifi or Bluetooth"
             ]
           },
           {
@@ -293,15 +293,15 @@
               ]
             },
             "id": "e9d9b4ac-dc8b-4176-aa46-cbd39df873a0",
+            "labels": [
+              "Wifi "
+            ],
             "source": {
               "cell": "2932c173-28b8-47eb-8519-d6815c6075d6"
             },
             "target": {
               "cell": "b951f7b7-3752-40f8-9f3f-3521891bff53"
             },
-            "labels": [
-              "Wifi "
-            ],
             "vertices": [
               {
                 "x": 560,
@@ -341,6 +341,9 @@
               "threats": []
             },
             "id": "3dac3853-a988-49e2-b311-d8c4eba3012a",
+            "labels": [
+              "LTE or WLAN"
+            ],
             "source": {
               "x": 840,
               "y": 460
@@ -348,9 +351,6 @@
             "target": {
               "cell": "2bc11964-fd3d-4f02-8a4c-7a0553daebaf"
             },
-            "labels": [
-              "LTE or WLAN"
-            ],
             "vertices": []
           },
           {
@@ -385,15 +385,15 @@
               "threats": []
             },
             "id": "a6428a3f-0331-48a3-965d-6f49190325a1",
+            "labels": [
+              ""
+            ],
             "source": {
               "cell": "cba3869f-6632-4af1-bd91-2018d55bf983"
             },
             "target": {
               "cell": "2a266c6e-d955-4c48-ae09-412d5f190764"
-            },
-            "labels": [
-              ""
-            ]
+            }
           },
           {
             "shape": "trust-boundary-curve",
@@ -638,7 +638,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Router\nMobile Hotspot"
+                "text": "Router, \nMobile Hotspot, \nothers"
               },
               "body": {
                 "stroke": "#333333",
@@ -648,11 +648,11 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "2932c173-28b8-47eb-8519-d6815c6075d6",
             "zIndex": 16,
+            "id": "2932c173-28b8-47eb-8519-d6815c6075d6",
             "data": {
               "type": "tm.Actor",
-              "name": "Router\nMobile Hotspot",
+              "name": "Router, \nMobile Hotspot, \nothers",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
