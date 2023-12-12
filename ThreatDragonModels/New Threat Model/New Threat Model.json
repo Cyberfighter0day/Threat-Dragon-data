@@ -344,10 +344,51 @@
             "vertices": []
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "(Trust Boundary)\n\nLocal Access Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "71f0a507-7993-4693-9bb0-5f1aee984b1b",
+            "labels": [
+              "(Trust Boundary)\n\nLocal Access Boundary"
+            ],
+            "source": {
+              "x": 160,
+              "y": 270
+            },
+            "target": {
+              "x": 1040,
+              "y": 860
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 280
+              },
+              {
+                "x": 860,
+                "y": 400
+              },
+              {
+                "x": 960,
+                "y": 590
+              }
+            ]
+          },
+          {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -371,8 +412,35 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "20b776db-7284-4ec7-9965-91dc40e9fa20",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "d5c2bf90-a47b-4a30-898a-aced6b5100fc",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ]
             },
             "id": "9ed70e96-99e7-48cb-b3f7-f62d0ff8e267",
             "labels": [
@@ -384,7 +452,12 @@
             "target": {
               "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 610,
+                "y": 610
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -422,53 +495,12 @@
               "LTE"
             ],
             "source": {
-              "x": 840,
-              "y": 460
+              "cell": "2932c173-28b8-47eb-8519-d6815c6075d6"
             },
             "target": {
               "cell": "2bc11964-fd3d-4f02-8a4c-7a0553daebaf"
             },
             "vertices": []
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "(Trust Boundary)\n\nLocal Access Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "71f0a507-7993-4693-9bb0-5f1aee984b1b",
-            "source": {
-              "x": 160,
-              "y": 270
-            },
-            "target": {
-              "x": 1040,
-              "y": 860
-            },
-            "vertices": [
-              {
-                "x": 560,
-                "y": 280
-              },
-              {
-                "x": 860,
-                "y": 400
-              },
-              {
-                "x": 960,
-                "y": 590
-              }
-            ],
-            "labels": [
-              "(Trust Boundary)\n\nLocal Access Boundary"
-            ]
           },
           {
             "position": {
@@ -675,13 +707,13 @@
             },
             "visible": true,
             "shape": "td-text-block",
+            "zIndex": 17,
             "id": "e0c513e9-b487-4ba5-b965-183755f8ddca",
             "data": {
               "type": "tm.Text",
               "name": "(Trst Boundary)\n\nLocal Access Boundary",
               "hasOpenThreats": false
-            },
-            "zIndex": 17
+            }
           }
         ],
         "format": "td"
@@ -689,6 +721,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 10
+    "threatTop": 15
   }
 }
