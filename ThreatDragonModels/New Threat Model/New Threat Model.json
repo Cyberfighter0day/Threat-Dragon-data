@@ -19,11 +19,11 @@
         "cells": [
           {
             "position": {
-              "x": 170,
+              "x": 169.99999999999994,
               "y": 440
             },
             "size": {
-              "width": 390,
+              "width": 380,
               "height": 370
             },
             "shape": "trust-boundary-box",
@@ -87,13 +87,11 @@
             },
             "attrs": {
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -111,26 +109,13 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
-                {
-                  "id": "cf3b9a67-f2c0-4fea-a2d8-895308fa7cef",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 10,
-                  "score": ""
-                },
                 {
                   "id": "7f8ac85a-caad-4ee1-a8db-a1ed88e70c81",
                   "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "NotApplicable",
+                  "severity": "Low",
                   "type": "Information disclosure",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
@@ -340,7 +325,8 @@
             },
             "target": {
               "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -702,7 +688,7 @@
           {
             "position": {
               "x": 410,
-              "y": 624.9999999999993
+              "y": 630
             },
             "size": {
               "width": 100,
@@ -736,7 +722,7 @@
                   "title": "New STRIDE threat",
                   "status": "NotApplicable",
                   "severity": "Low",
-                  "type": "Spoofing",
+                  "type": "Tampering",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
@@ -821,7 +807,7 @@
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "visible": true,
@@ -831,7 +817,7 @@
               "type": "tm.Actor",
               "name": "User's Phone",
               "description": "",
-              "outOfScope": false,
+              "outOfScope": true,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
               "hasOpenThreats": false,
@@ -879,6 +865,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 15
+    "threatTop": 20
   }
 }
