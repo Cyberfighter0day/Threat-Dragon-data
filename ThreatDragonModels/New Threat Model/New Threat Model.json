@@ -45,7 +45,7 @@
           {
             "position": {
               "x": 717.5,
-              "y": 624.9999999999993
+              "y": 714.9999999999993
             },
             "size": {
               "width": 112.5,
@@ -53,7 +53,7 @@
             },
             "attrs": {
               "text": {
-                "text": "User"
+                "text": "User "
               },
               "body": {
                 "stroke": "#333333",
@@ -67,7 +67,7 @@
             "id": "3822374a-00c4-4e2b-9020-46b9b2fffb49",
             "data": {
               "type": "tm.Actor",
-              "name": "User",
+              "name": "User ",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -301,44 +301,46 @@
             "vertices": []
           },
           {
-            "shape": "trust-boundary-curve",
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
             "width": 200,
             "height": 100,
             "zIndex": 10,
             "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "(Trust Boundary)\n\nLocal Access Boundary",
+              "type": "tm.Flow",
+              "name": "Touch Screen",
               "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "outOfScope": false,
+              "isBidirectional": true,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
             },
-            "id": "71f0a507-7993-4693-9bb0-5f1aee984b1b",
+            "id": "fa151fe5-535d-4f19-93e9-2378d44383b5",
             "labels": [
-              "(Trust Boundary)\n\nLocal Access Boundary"
+              "Touch Screen"
             ],
             "source": {
-              "x": 160,
-              "y": 270
+              "cell": "2a266c6e-d955-4c48-ae09-412d5f190764"
             },
             "target": {
-              "x": 1040,
-              "y": 860
-            },
-            "vertices": [
-              {
-                "x": 560,
-                "y": 280
-              },
-              {
-                "x": 860,
-                "y": 400
-              },
-              {
-                "x": 960,
-                "y": 590
-              }
-            ]
+              "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
+            }
           },
           {
             "shape": "flow",
@@ -407,7 +409,7 @@
               "cell": "b951f7b7-3752-40f8-9f3f-3521891bff53"
             },
             "target": {
-              "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
+              "cell": "272bd67f-a114-4353-80b0-85aa7de07636"
             },
             "vertices": []
           },
@@ -422,7 +424,7 @@
                 "sourceMarker": {
                   "name": "block"
                 },
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "width": 200,
@@ -431,9 +433,9 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Touch Screen",
+              "name": "WAN",
               "description": "",
-              "outOfScope": false,
+              "outOfScope": true,
               "isBidirectional": true,
               "reasonOutOfScope": "",
               "protocol": "",
@@ -442,15 +444,21 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "fa151fe5-535d-4f19-93e9-2378d44383b5",
+            "id": "32fb49ed-8209-4783-a87e-cb0f920438a2",
             "source": {
-              "cell": "2a266c6e-d955-4c48-ae09-412d5f190764"
+              "cell": "272bd67f-a114-4353-80b0-85aa7de07636"
             },
             "target": {
-              "cell": "3822374a-00c4-4e2b-9020-46b9b2fffb49"
+              "cell": "5b2442fb-f055-46b1-9dbe-eb158b0cd9c1"
             },
             "labels": [
-              "Touch Screen"
+              "WAN"
+            ],
+            "vertices": [
+              {
+                "x": 890,
+                "y": 685
+              }
             ]
           },
           {
@@ -473,7 +481,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "LTE",
+              "name": "WAN",
               "description": "",
               "outOfScope": true,
               "isBidirectional": true,
@@ -486,7 +494,7 @@
             },
             "id": "3dac3853-a988-49e2-b311-d8c4eba3012a",
             "labels": [
-              "LTE"
+              "WAN"
             ],
             "source": {
               "cell": "2932c173-28b8-47eb-8519-d6815c6075d6"
@@ -495,6 +503,94 @@
               "cell": "2bc11964-fd3d-4f02-8a4c-7a0553daebaf"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "WAN",
+              "description": "",
+              "outOfScope": true,
+              "isBidirectional": true,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "bd83177a-057d-4c84-8869-f10d78820c8e",
+            "source": {
+              "cell": "2932c173-28b8-47eb-8519-d6815c6075d6"
+            },
+            "target": {
+              "cell": "5b2442fb-f055-46b1-9dbe-eb158b0cd9c1"
+            },
+            "labels": [
+              "WAN"
+            ],
+            "vertices": [
+              {
+                "x": 1030,
+                "y": 520
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "(Trust Boundary)\n\nLocal Access Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "71f0a507-7993-4693-9bb0-5f1aee984b1b",
+            "labels": [
+              "(Trust Boundary)\n\nLocal Access Boundary"
+            ],
+            "source": {
+              "x": 160,
+              "y": 270
+            },
+            "target": {
+              "x": 920,
+              "y": 980
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 280
+              },
+              {
+                "x": 860,
+                "y": 400
+              },
+              {
+                "x": 920,
+                "y": 750
+              }
+            ]
           },
           {
             "position": {
@@ -546,8 +642,8 @@
           },
           {
             "position": {
-              "x": 1040,
-              "y": 400
+              "x": 1102,
+              "y": 410
             },
             "size": {
               "width": 90,
@@ -555,7 +651,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Tom Tom \nservice"
+                "text": "TomTom \nUpdates"
               },
               "body": {
                 "stroke": "#333333",
@@ -569,7 +665,7 @@
             "id": "2bc11964-fd3d-4f02-8a4c-7a0553daebaf",
             "data": {
               "type": "tm.Process",
-              "name": "Tom Tom \nservice",
+              "name": "TomTom \nUpdates",
               "description": "",
               "outOfScope": true,
               "reasonOutOfScope": "",
@@ -579,10 +675,10 @@
             }
           },
           {
-            "angle": 75,
+            "angle": 90,
             "position": {
-              "x": 880,
-              "y": 725.0386374562011
+              "x": 799.6832983968737,
+              "y": 860
             },
             "size": {
               "width": 160,
@@ -708,6 +804,74 @@
               "name": "(Trst Boundary)\n\nLocal Access Boundary",
               "hasOpenThreats": false
             }
+          },
+          {
+            "position": {
+              "x": 717.5,
+              "y": 654.9999999999993
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User's Phone"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "272bd67f-a114-4353-80b0-85aa7de07636",
+            "data": {
+              "type": "tm.Actor",
+              "name": "User's Phone",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "zIndex": 18
+          },
+          {
+            "position": {
+              "x": 1102,
+              "y": 590
+            },
+            "size": {
+              "width": 90,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "TomTom \nMydrive"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": "4 3"
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "5b2442fb-f055-46b1-9dbe-eb158b0cd9c1",
+            "data": {
+              "type": "tm.Process",
+              "name": "TomTom \nMydrive",
+              "description": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "zIndex": 19
           }
         ],
         "format": "td"
